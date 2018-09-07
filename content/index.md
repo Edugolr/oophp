@@ -1,25 +1,23 @@
 ---
-title: "Min fina titel"
+title: "Chai17 oophp"
 ---
 Min me-sida i kursen oophp
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" caption="Bild på mig"]
+[FIGURE class="floatright" src="image/me.jpg?h=250"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Hej jag är en 32 årig Boråsare, jag är ganska ny vad gäller webbprogrammering.
+Jag har haft ett varierat yrkesliv. Mitt första jobb var på ett bokbinderi där jag mest stansade häftade och skar reklam i olika former.
+Mitt andra jobb blev på ett i Borås välkänt callcenter, där spenderade jag inte mer än 5 månader.
+Mitt tredje jobb var på ett plåtslageri där jag tillverkade brandsäkra ventilationslösningar.
+Mitt fjärde jobb blev ett långt hopp bort till Asien, närmare bestämt Thailand.
+Där jobbsurfade jag lite som Beachboy, inkastare och butiksmedarbetare.
+När jag kom hem igen var arbetsmarknaden bättre i Sverige och jag landade snabbt ett jobb på Ericsson i Borås.
+Det kom att vara i 10 år och jag hann jobba med bland annat produktimplementering och som servicetekniker.
+Sista jag gjorde innan utbildningen nu var en mellanlandning som Maskinförare för ett sorteringsverk och en lastmaskin.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
-
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
-
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+Jag bor i ett renoveringsprojekt lite utanför staden tillsammans med två inneboende, Johanna och Kaj.
+Dagarna spenderas numera med att studera Webbprogrammering på distans och olika sorters träning.
+Jag löptränar 1-2ggr i veckan och går på gymmet 2-4ggr.
+Mina hobbies annars är att spela på gitarr och samla hockeykort.

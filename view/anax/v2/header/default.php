@@ -12,6 +12,6 @@ namespace Anax\View;
 ?>
 
 <div class="header">
-    <img class="header-logo" src="<?= asset("img/leaf.jpg") ?>" alt="Logo">
-    HEADER
+    Christofer Wikman aka chai17 <br>
+    oophp
 </div>

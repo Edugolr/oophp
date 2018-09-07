@@ -23,8 +23,6 @@ body {
     padding: 0 0.5em;
 }
 
-
-
 /**
  * Header
  */
@@ -70,6 +68,9 @@ body {
     color: #ddd;
 }
 
+.navbar {
+    background-color: #535353 !important;
+}
 
 
 /**
@@ -92,7 +93,9 @@ h1 {
     font-size: 2.5em;
 }
 
-
+.floatright {
+    float: right;
+}
 
 /**
  * Footer
