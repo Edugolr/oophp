@@ -8,6 +8,7 @@
         <target>doc/api</target>
     </transformer>
     <files>
+        <directory>vendor/anax/*/src</directory>
         <directory>src</directory>
     </files>
 </phpdoc>
