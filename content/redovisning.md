@@ -38,7 +38,32 @@ mer med kod som hobby. Man blir snabbt ringrostig.
 Kmom02
 -------------------------
 
-Här är redovisningstexten
+
+**Hur gick det att överföra spelet “Gissa mitt nummer” in i din me-sida?**
+Jag följde till en början guiden och videoserien och blev mest förvirrad. Visst kom man in på rätt spår men det blev inte riktigt bra.
+Efter att ha gått igenom guiden så började jag leka runt och prova mig fram istället och tror jag kom på en bra lösning för implementeringen. Jag hade även en liten miss som orsakade en del problem. Inuti form hade jag specat action.
+
+
+
+**Berätta om din syn på modellering likt UML jämfört med verktyg som phpDocumentor. Fördelar, nackdelar, användningsområde? Vad**
+Modellering med UML blir ändå att man själv manuellt (åtminstone den erfarenheten jag har av det) sitter och matar in.
+Det är mer tidskrävande men man får samtidigt kanske en bättre koll på strukturen. Dokumentation är alltid bra oavsett om
+man jobbar i grupp eller om man kanske har ett projekt som legat och vilat ett tag.
+
+**tycker du om konceptet make doc?**
+Känns riktigt smidigt, Jag kör cygwin och kunde dock inte få igång 'firefox doc'.
+Viktigt att man dokumenterar för att dra så mycket nytta av det som det går.
+
+**Hur känns det att skriva kod utanför och inuti ramverket, ser du fördelar och nackdelar med de olika sätten?**
+Inuti ramverket tar det en stund innan man hittar runt, man behöver ha koll på var vad ska ändras och kan behöva
+testa en hel del för att hitta rätt och få med alla implementeringar på rätt sätt. Men när man börjar få koll
+sker mycket med "Magi".
+
+Utanför ramverket kan jag känna att man har mer kontroll på vad som händer, man kan direkt se inverkan
+på det man gör och det är gissningsvis lättare att lösa buggar.
+
+**Vilken är din TIL för detta kmom?**
+När det känns tungt och alltför krångligt, ta en kaffe andas och bryt ner problemen till mindre delar.
 
 
 
