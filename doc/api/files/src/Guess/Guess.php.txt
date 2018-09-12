@@ -2,7 +2,7 @@
 /**
  * Guess my number, a class supporting the game through GET, POST and SESSION.
  */
-namespace chai17\Guess;
+namespace Chai17\Guess;
 
 class Guess
 {
