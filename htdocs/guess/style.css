@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Lily+Script+One);
+
+.tries {
+    color: red;
+    font-size: 1.5em;
+}
+
+.cheat {
+    color: red;
+    font-size: 1.5em;
+}
+
+.guess {
+    font-size: 1.5em;
+}
+
+.game {
+    margin: auto;
+    width: 50%;
+    font-family: arial, tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    direction: ltr;
+    background: white;
+}
+
+form {
+    overflow: hidden;
+    background: white;
+    border-radius: 10px;
+}
+
+form label {
+    font-size: 14px;
+    color: darkgray;
+    cursor: pointer;
+}
+
+form label,
+form input {
+    clear: both;
+}
+
+form input {
+    margin: 15px 0;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+form input[type=number]:focus {
+    border-color: cornflowerblue;
+    width: 60%;
+}
+
+input[type=submit] {
+    padding: 15px 50px;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    clear: right;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+input[type="submit"]:active {
+    opacity: 0.4;
+}

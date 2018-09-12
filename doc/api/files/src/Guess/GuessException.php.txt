@@ -1,0 +1,10 @@
+<?php
+/**
+ * Exception class for GuessException.
+ */
+namespace chai17\Guess;
+
+class GuessException extends Exception
+{
+}
+

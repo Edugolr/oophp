@@ -9,6 +9,11 @@ return [
         "title" => "Första sidan, börja här.",
     ],
     [
+        "text" => "Gissa numret",
+        "url" => "gissa",
+        "title" => "Gissa numret",
+    ],
+    [
         "text" => "Redovisning",
         "url" => "redovisning",
         "title" => "Redovisningstexter från kursmomenten.",

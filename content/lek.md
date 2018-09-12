@@ -11,6 +11,7 @@ Du kan skriva egna routes i filen `router/000_lek.php`, där finns några enklar
 * [Hello world som JSON](lek/hello-world-json)
 * [Hello world inuti me-sidan](lek/hello-world-page)
 
+
 Du kan också lägga till vanlig PHP-kod i filer under katalogen htdocs, de kan du köra som vanliga enkla PHP-program.
 
 * [Ett demo skript](demo/demo.php)
