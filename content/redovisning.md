@@ -70,8 +70,52 @@ När det känns tungt och alltför krångligt, ta en kaffe andas och bryt ner pr
 Kmom03
 -------------------------
 
-Här är redovisningstexten
+**Har du tidigare erfarenheter av att skriva kod som testar annan kod?**
+Ja jag har i någon tidigare kurs skrivit tester. Har för mig att det var i python vi gjorde detta ?
+Inte helt säker men det är inte helt nytt för mig. Däremot är visualiseringen med PHPunit nytt
+och väldigt trevligt.
 
+**Hur ser du på begreppen enhetstestning och att skriva testbar kod?**
+Bra fråga, min syn på det är att man enhetstestar för att koden verkligen funkar och att om man då ändrar koden snabbt
+kan se om man ställt till något eller om det var en bra implementation. Därav viktigt och bra förfarande att skriva testbar kod (ex lägga in funktioner
+som gör att koden går att testa)
+
+**Förklara kort begreppen white/grey/black box testing samt positiva och negativa tester, med dina egna ord.**
+Fick snabbt leta reda på detta. White box testing som vi gjorde nu har jag koll på. Det är när man har full koll
+på koden som skall testat. SOm jag förstår det är blackbox testing endast funktionskontroll utan att bry sig om hur.
+Greybox spontant skulle jag gissa är en kombination av båda, man känner till en del av koden bakom och kan nyttja det i sina tester.
+
+**Berätta om hur du löste uppgiften med Tärningsspelet 100, hur du tänkte, planerade och utförde uppgiften samt hur du organiserade din kod?**
+Jag byggde vidare på Dice från exemplen och arbetade med SESSION för att spara datan.
+Vissa svårigheter och jag anar att jag missat något i tänket då det tog väldigt lång tid för
+mig och spelet blev väl enkelt.
+
+Jag har haft svårt att koncentrera mig under veckan och därav även organisera mig, men tillslut
+gick jag tillbaka till penna och papper där jag skrev ned vad jag ville spelet skulle göra
+och fick äntligen lite struktur och framgång i skapandet.
+
+Min tanke var att låta spelaren börja och göra sina egna rolls, datorns simuleras utan
+att man gör något själv. Jag använde in_array för att fånga eventuella 1or och då nollställa
+SESSION med rundans total och ge turen till datorn istället.
+
+Jag lade en länk som i gissa spelet med de olika varianterna (nu blev det bara en men vem vet)
+inuti content mappen (tarning100.md)
+
+Jag lade sedan en mapp inuti src som heter Dice som har klasserna inuti filerna med samma namn
+(Dice och DiceHand)
+
+002_tarning100.php ligger i router mappen.
+
+Inuti view under tarning100 ligger 'start.php' tanken var att det skulle vara en startsida för spelet men det blev hela spelet.
+
+Jag hade velat lyfta ur mer kod från start filen men jag har lagt enormt mycket tid och måste nu prioritera indproj under helgen.
+
+**Hur väl lyckades du testa tärningsspelet 100?**
+Jag har 100 i coverage men kan absolut köra mer tester på varje funktion.
+Tycker bra om PHPunit och det känns skönt att få ett visuellt kvitto på att det fungerar!
+
+**Vilken är din TIL för detta kmom?**
+Det är tungt att studera när man har mycket annat i huvudet. Dejta inte när du pluggar ?
 
 
 Kmom04
