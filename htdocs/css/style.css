@@ -96,6 +96,9 @@ h1 {
 .floatright {
     float: right;
 }
+.floatleft {
+    float: left;
+}
 
 /**
  * Footer
@@ -108,8 +111,114 @@ h1 {
     padding: 1em 0;
 }
 
+/**
+ * Style a dice using UTF-8 characters.
+ */
+.dice-utf8 .dice-1::after { content: "\2680"; }
+.dice-utf8 .dice-2::after { content: "\2681"; }
+.dice-utf8 .dice-3::after { content: "\2682"; }
+.dice-utf8 .dice-4::after { content: "\2683"; }
+.dice-utf8 .dice-5::after { content: "\2684"; }
+.dice-utf8 .dice-6::after { content: "\2685"; }
 
+.dice-utf8 {
+    font-size: 64px;
+    color: red;
+}
 
+/**
+ * CSS sprite for a dice with six faces.
+ */
+.dice-sprite {
+    display: -moz-box;
+    padding: 0;
+    margin: 0 4px 0 0;
+    width: 64px;
+    height: 64px;
+    background: url(dice-faces.jpg) no-repeat;
+}
+
+.dice-sprite.dice-1 { background-position: -160px 0; }
+.dice-sprite.dice-2 { background-position: -128px 0; }
+.dice-sprite.dice-3 { background-position: -96px 0; }
+.dice-sprite.dice-4 { background-position: -64px 0; }
+.dice-sprite.dice-5 { background-position: -32px 0; }
+.dice-sprite.dice-6 { background-position: 0 0; }
+
+.btn {
+  position: relative;
+  /* display: block; */
+  min-width: 50px;
+  min-height: 30px;
+  margin: 30px auto;
+  padding: 0;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+.btn.orange {
+  background-color: #e67e22;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+  background-color: #d35400;
+}
+
+.btn.red {
+  background-color: #e74c3c;
+}
+
+.btn.red:hover, .btn.red:focus {
+  background-color: #c0392b;
+}
 /**
  * Responsive
  */

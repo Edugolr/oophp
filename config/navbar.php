@@ -14,6 +14,11 @@ return [
         "title" => "Gissa numret",
     ],
     [
+        "text" => "Tärning 100",
+        "url" => "tarning100",
+        "title" => "Tärning 100",
+    ],
+    [
         "text" => "Redovisning",
         "url" => "redovisning",
         "title" => "Redovisningstexter från kursmomenten.",
