@@ -116,6 +116,8 @@ Tycker bra om PHPunit och det känns skönt att få ett visuellt kvitto på att 
 
 **Vilken är din TIL för detta kmom?**
 Det är tungt att studera när man har mycket annat i huvudet. Dejta inte när du pluggar ?
+Blev lite få git pushes eller endast två.
+Kör projektet över github och har snabbt vant mig med att ha atom kopplat och pusha där.
 
 
 Kmom04

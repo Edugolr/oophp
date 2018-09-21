@@ -34,7 +34,7 @@ class DiceHandCreateObjectTest extends TestCase
         $this->assertInstanceOf("\Chai17\Dice\DiceHand", $dice);
         $dice->roll();
         $res = $dice->values();
-        foreach ($res as $key => $value) {
+        foreach ($res as $value) {
             $this->assertInternalType('int', $value);
         }
         $this->assertInternalType('array', $res);
