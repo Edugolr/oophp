@@ -123,7 +123,32 @@ Kör projektet över github och har snabbt vant mig med att ha atom kopplat och 
 Kmom04
 -------------------------
 
-Här är redovisningstexten
+**Vilka är dina tankar och funderingar kring trait och interface?**
+Jag tänker att det säkert är bra men ännu en sak att hålla reda på.
+Känns som huvudet exploderar snart av all info.
+Trait är ändå lite som en klass fast den inte kan bära sig själv, så den känns ganska ok.
+Interface kan jag tänka är bra för att styra upp vad som måste vara med men jag är inte såld ännu.
+
+**Hur gick det att skapa intelligensen och taktiken till tärningsspelet, hur gjorde du?**
+Intelligensen blev taktiken eller taktiken blev intelligensen snarare.
+Taktiken var ganska basic och jag tycker det gick bra.
+1. Givetvis spara alltid om summan på det datorn slagit och den total når spelets mål (går att ställa in målet i formuläret)
+2. Kolla sannolikheten att du slår en etta (1/sida) per tärning. Spelet kan ha varierande antal tärningar och sidor.
+Är sannolikheten över 50% så sparar datorn annars rollar han igen. tidigare slag ignoreras då dessa inte spelar någon roll.
+
+**Några reflektioner från att integrera hårdare in i ramverkets klasser och struktur?**
+Jag är lite osäker på om jag integrerat rätt. I filmerna som ligger uppe om momentet visar MOS sin route och kan där
+köra utan return, det fungerar inte för mig. Han verkar också ha något i htdocs, det har inte jag utan mitt ligger under view/tarning00
+
+**Berätta hur väl du lyckades med make test inuti ramverket och hur väl du lyckades att testa din kod med enhetstester och vilken kodtäckning du fick.**
+Det tog en stund och det blev lite många tester i en fil (jag körde DiceGame och Histogramtrait testen i samma)
+Annars är jag nöjd med 100% kodtäckning. Återigen kan jag absolut testa mer, mycket mer på varje function men man måste ibland
+nöja sig med good enough.
+
+**Vilken är din TIL för detta kmom?**
+Jag hade fattat route helt fel. det var riktigt skönt när det gick upp ett ljus om att jag mer eller mindre fångar en POST/GET
+bestämmer vad som skall skickas in och renderar det typ.
+
 
 
 
