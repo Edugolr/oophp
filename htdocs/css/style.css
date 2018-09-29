@@ -218,7 +218,9 @@ h1 {
 input[type="submit"]:disabled {
     opacity: 0.2;
 }
-.btn:hover, .btn:focus {
+
+.btn:hover,
+.btn:focus {
     background-color: #27ae60;
 }
 
@@ -273,22 +275,23 @@ input[type="submit"]:disabled {
 }
 
 /* form starting stylings ------------------------------- */
-.group 			  {
-    position:relative;
+.group {
+    position: relative;
     margin-bottom: 45px;
 }
-input 				{
+
+input {
     font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 300px;
     border: none;
-    border-bottom:1px solid #757575;
+    border-bottom: 1px solid #757575;
 }
-input:focus 		{ outline:none; }
+input:focus { outline: none; }
 
 /* LABEL ======================================= */
-label 				 {
+label {
     color: #999;
     font-size: 18px;
     font-weight: normal;
@@ -296,21 +299,28 @@ label 				 {
     pointer-events: none;
     left: 5px;
     top: 10px;
-    transition:0.2s ease all;
-    -moz-transition:0.2s ease all;
-    -webkit-transition:0.2s ease all;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
+input:focus ~ label,
+input:valid ~ label {
+    top: -20px;
     font-size: 14px;
     color: #5264ae;
 }
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; width:300px; }
-.bar:before, .bar:after 	{
+.bar {
+    position: relative;
+    display: block;
+    width: 300px;
+}
+
+.bar::before,
+.bar::after {
     content: '';
     height: 2px;
     width: 0;
@@ -321,15 +331,18 @@ input:focus ~ label, input:valid ~ label 		{
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;
 }
-.bar:before {
+
+.bar::before {
     left: 50%;
 }
-.bar:after {
+
+.bar::after {
     right: 50%;
 }
 
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+input:focus ~ .bar::before,
+input:focus ~ .bar::after {
     width: 50%;
 }
 
@@ -346,23 +359,37 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 
 /* active state */
 input:focus ~ .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
 }
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264ae; }
-    to 	{ width:0; background:transparent; }
+    from { background: #5264ae; }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
 }
+
 @-moz-keyframes inputHighlighter {
-	from { background:#5264ae; }
-    to 	{ width:0; background:transparent; }
+    from { background: #5264ae; }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
 }
+
 @keyframes inputHighlighter {
-	from { background:#5264ae; }
-    to 	{ width:0; background:transparent; }
+	from { background: #5264ae; }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
 }
 
 /**

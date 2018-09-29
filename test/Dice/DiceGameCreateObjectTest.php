@@ -86,7 +86,6 @@ class DiceGameCreateObjectTest extends TestCase
         $exp = [];
         $this->assertEquals($exp, $res);
     }
-
     public function testgetTurnTotal()
     {
         $diceGame = new DiceGame();
@@ -173,23 +172,7 @@ class DiceGameCreateObjectTest extends TestCase
         $res = $diceGame;
         $this->assertEquals($exp, $res);
     }
-    public function testHistogramSerie()
-    {
-        $diceGame = new DiceGame();
-        $this->assertInstanceOf("\Chai17\Dice\DiceGame", $diceGame);
-        $diceGame->roll();
-        $diceGame->setHistogramSerie($diceGame->values());
-        $res = $diceGame->getHistogramSerie();
-        $exp = $diceGame->values();
-        $this->assertEquals($exp, $res);
 
-        $res = $diceGame->printHistogram();
-        $exp = "string";
-        $this->assertInternalType($exp, $res);
-
-        $res = $diceGame->printHistogram(1, 5);
-        $this->assertInternalType($exp, $res);
-    }
     public function testcomputerTurn()
     {
         $diceGame = new DiceGame();
