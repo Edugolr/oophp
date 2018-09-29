@@ -1,15 +1,20 @@
 /**
  * General setup for layout.
  */
+
 html {
     overflow-y: scroll;
     background-color: #424242;
 }
 
 body {
+    padding: 0;
     margin: 0;
-    background-color: #fff;
-    word-wrap: break-word;
+    font-family: 'Roboto ', sans-serif;
+    font-size: 14px;
+    color: #212121;
+    line-height: 1.4;
+    background-color: #f9f9f9;
 }
 
 .outer-wrap {
@@ -52,25 +57,67 @@ body {
 /**
  * Navbar
  */
-.outer-wrap-navbar {
-    max-width: 100%;
-    min-height: 2em;
-    background-color: #535353;
+
+/* navbar */
+.navbar {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #2196f3;
+}
+
+.logo,
+.nav {
+    display: inline-block;
+    margin: 0;
+}
+
+/* nav links */
+.nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.navbar a {
     color: #fff;
-    padding: 0.5em 0;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+/* if you want pull right nav links */
+.nav-right {
+    float: right;
+    line-height: 39px;
+}
+
+
+.outer-wrap-navbar {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    background-color: #2196f3;
 }
 
 .outer-wrap-navbar a {
     color: #fff;
+    text-decoration: none;
 }
 
 .outer-wrap-navbar a:hover {
     color: #ddd;
 }
 
-.navbar {
-    background-color: #535353 !important;
-}
 
 /**
  * Main
@@ -123,6 +170,13 @@ h1 {
 
 .dice-utf8 {
     font-size: 64px;
+}
+
+.green {
+    color: green;
+}
+
+.red {
     color: red;
 }
 
@@ -161,8 +215,10 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.btn:hover,
-.btn:focus {
+input[type="submit"]:disabled {
+    opacity: 0.2;
+}
+.btn:hover, .btn:focus {
     background-color: #27ae60;
 }
 
@@ -214,6 +270,99 @@ h1 {
 .btn.red:hover,
 .btn.red:focus {
     background-color: #c0392b;
+}
+
+/* form starting stylings ------------------------------- */
+.group 			  {
+    position:relative;
+    margin-bottom: 45px;
+}
+input 				{
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    top:-20px;
+    font-size: 14px;
+    color: #5264ae;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264ae;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264ae; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264ae; }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264ae; }
+    to 	{ width:0; background:transparent; }
 }
 
 /**

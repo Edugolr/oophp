@@ -34,6 +34,7 @@ class DiceHandCreateObjectTest extends TestCase
         $this->assertInstanceOf("\Chai17\Dice\DiceHand", $dice);
         $dice->roll();
         $res = $dice->values();
+
         foreach ($res as $value) {
             $this->assertInternalType('int', $value);
         }
@@ -46,7 +47,8 @@ class DiceHandCreateObjectTest extends TestCase
         $this->assertInstanceOf("\Chai17\Dice\DiceHand", $dice);
         $dice->roll();
         $res = $dice->sum();
-        $this->assertInternalType('int', $res);
+        $exp = "int";
+        $this->assertInternalType($exp, $res);
     }
     //check return type on average()
     public function testaverage()
@@ -55,6 +57,17 @@ class DiceHandCreateObjectTest extends TestCase
         $this->assertInstanceOf("\Chai17\Dice\DiceHand", $dice);
         $dice->roll();
         $res = $dice->average();
-        $this->assertInternalType('float', $res);
+        $exp = "float";
+        $this->assertInternalType($exp, $res);
+    }
+    // check return value on getSides
+    public function testgetSides()
+    {
+        $dice = new DiceHand(1, 3);
+        $this->assertInstanceOf("\Chai17\Dice\DiceHand", $dice);
+        $dice->roll();
+        $res = $dice->getSides();
+        $exp = 3;
+        $this->assertEquals($exp, $res);
     }
 }

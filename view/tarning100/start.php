@@ -11,12 +11,7 @@ $game = new DiceHand(3);
 $_SESSION['turntotal'] = $_SESSION['turntotal'] ?? 0;
 $_SESSION['total'] = $_SESSION['total'] ?? 0;
 $_SESSION['computerTotal'] = $_SESSION['computerTotal'] ?? 0;
-?>
-<h1>Welcome to dicepig</h1>
-<p>The goal is to reach a 100 points.
-You roll 3 dices if then you can choose to roll again or save the score and end your turn.
-If you roll a 1 you loose your turn and the points. </p>
-<?php
+
 if (isset($_POST['roll'])) {
     $game->roll();
     $_SESSION['turntotal'] = $_SESSION['turntotal'] + $game->sum();

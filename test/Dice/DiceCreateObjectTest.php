@@ -5,7 +5,7 @@ namespace Chai17\Dice;
 use PHPUnit\Framework\TestCase;
 
 /**
- * Test cases for class Guess.
+ * Test cases for class Dice.
  */
 class DiceCreateObjectTest extends TestCase
 {
