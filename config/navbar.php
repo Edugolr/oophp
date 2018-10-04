@@ -19,6 +19,11 @@ return [
         "title" => "Tärning 100",
     ],
     [
+        "text" => "Movie",
+        "url" => "movie",
+        "title" => "Movie",
+    ],
+    [
         "text" => "Redovisning",
         "url" => "redovisning",
         "title" => "Redovisningstexter från kursmomenten.",

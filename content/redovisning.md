@@ -155,9 +155,26 @@ bestämmer vad som skall skickas in och renderar det typ.
 Kmom05
 -------------------------
 
-Här är redovisningstexten
+**Några reflektioner kring koden i övningen för PHP PDO och MySQL?**
+Uppgiften kändes som en repetition utav tidigare databas kursen.
+PHP PDO och MySQL jobbar bra tillsammans, känns väldigt enkelt och smidigt.
+När jag tittade på exempelkoden kändes det som att man måste väl behöva skriva mer än såhär?
+Men när jag gick in på index sidan fungerade allt enkelt och smidigt.
 
+**Hur gick det att överföra koden in i ramverket, stötte du på några utmaningar?**
+Det var inga större konstigheter, gjorde på liknande sätt som tidigare kursmoment med Dice.
+Det klarnar sakta men säkert med router hanteringen och alla kopplingar men det är omfattande
+och rätt fint Anax ändå (ja jag har varit rätt anti att vi använder det).
 
+**Berätta om din slutprodukt för filmdatabasen, gjorde du endast basfunktionaliteten eller lade du till extra features och hur tänkte du till kring användarvänligheten och din kodstruktur?**
+Jag gjorde endast basfunktionaliteten. Tycker ändå det blev hyffsat användarvänligt och lätt att hitta. Kanske mer för en programmerare
+då jag valde att kalla menyvalet CRUD. Man går annars in på movie, där finns översikten på alla filmer, search finns på samma sida.
+Vill man fippla med databasen går man in i fliken CRUD där man kan välja film i en dropdown och sedan vad man vill göra med den.
+Går givet att jobba mycket mer på layout och användarvänlighet men detta var good enough imho.
+
+**Vilken är din TIL för detta kmom?**
+Om man inte blir uppstressad över att man inte kan eller förstår,
+utan istället lugnt jobbar på tills det sjunker in så lär åtminstone jag mig snabbare
 
 Kmom06
 -------------------------
