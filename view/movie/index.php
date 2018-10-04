@@ -22,19 +22,19 @@ include(__DIR__ . "/../../config/database.php");
 
 <div style="overflow-x:auto;">
     <table>
-      <tr>
-        <th>Id</th>
-        <th>Bild</th>
-        <th>Titel</th>
-        <th>År</th>
-      </tr>
-      <?php foreach ($res as $row): ?>
+        <tr>
+            <th>Id</th>
+            <th>Bild</th>
+            <th>Titel</th>
+            <th>År</th>
+        </tr>
+        <?php foreach ($res as $row) : ?>
           <tr>
             <td><?= $row->id ?></td>
             <td background='<?= $row->image ?>' background-size: 'contain'></td>
             <td><?= $row->title ?></td>
             <td><?= $row->year ?></td>
           </tr>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
     </table>
 </div>

@@ -11,7 +11,7 @@ include(__DIR__ . "/../../config/database.php");
 </div>
 <form class="" action="edit" method="post">
     <select class="" name="title">
-        <?php foreach ($res as $row): ?>
+        <?php foreach ($res as $row) : ?>
             <option value="<?=$row->title  ?>"><?=$row->title  ?></option>
         <?php endforeach; ?>
         <option value=""></option>
