@@ -1,4 +1,7 @@
 <?php
+
+namespace Chai17\src;
+
 /**
  * Get value from GET variable or return default value.
  *
@@ -79,7 +82,7 @@ function orderby2($column, $route)
 {
     $asc = mergeQueryString(["orderby" => $column, "order" => "asc"], $route);
     $desc = mergeQueryString(["orderby" => $column, "order" => "desc"], $route);
-    
+
     return <<<EOD
 <span class="orderby">
 <a href="$asc">&darr;</a>
@@ -111,4 +114,17 @@ function mergeQueryString($options, $prepend = "?")
 
     // Build and return the modified querystring as url
     return $prepend . http_build_query($query);
+}
+
+function slugify($string)
+{
+       //Unwanted:  {UPPERCASE} ; / ? : @ & = + $ , . ! ~ * ' ( )
+      $string = strtolower($string);
+       //Strip any unwanted characters
+       $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+       //Clean multiple dashes or whitespaces
+       $string = preg_replace("/[\s-]+/", " ", $string);
+       //Convert whitespaces and underscore to dash
+       $string = preg_replace("/[\s_]/", "-", $string);
+       return $string;
 }

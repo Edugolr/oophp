@@ -12,6 +12,6 @@ namespace Anax\View;
 ?>
 
 <div class="header">
-    Christofer Wikman aka chai17 <br>
-    oophp
+    Christofer Wikman aka chai17 | oophp
+
 </div>

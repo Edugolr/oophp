@@ -9,6 +9,16 @@ return [
         "title" => "Första sidan, börja här.",
     ],
     [
+        "text" => "FilterTest",
+        "url" => "filter",
+        "title" => "TextFilter.",
+    ],
+    [
+        "text" => "Content",
+        "url" => "content",
+        "title" => "content",
+    ],
+    [
         "text" => "Gissa numret",
         "url" => "gissa",
         "title" => "Gissa numret",

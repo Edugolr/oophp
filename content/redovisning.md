@@ -179,7 +179,28 @@ utan istället lugnt jobbar på tills det sjunker in så lär åtminstone jag mi
 Kmom06
 -------------------------
 
-Här är redovisningstexten
+**Hur gick det att jobba med klassen för filtrering och formatting av texten?**
+Överlag gick det bra.
+Jag hade dock gjort fel som jag inte märkte när jag gjorde uppgiften, utan först
+när jag började använda den i nästa uppgift. Det ställde till det nån timma i nästa uppgift
+då jag förutsatte att den fungerade och således letade fel i min nya kod.
+
+**Berätta om din klasstruktur och kodstruktur för din lösning av webbsidor med innehåll i databasen.**
+Jag använde mig av ramverkets controller hantering (addController) som router. Jag hade en hel del strul där
+iom att jag inte kört update på anax så saknades bland annat appinject.
+jag har en ContentController klass i src som hanterar alla router funktionerna.
+Mitt filter placerade jag i mitt namespace under Filter (src/Filter). Först hade jag filtreringen innan insert i
+databas, sedan efter på varje sida, innan jag ändrade till att ha det i ContentController.
+Jag använde ramverkets slugify via 'Anax\Url'
+
+
+**HUr känner du rent allmänt för den koden du skrivit i din me/redovisa, vad är bra och mindre bra? Ser du potential till refactoring av din kod och/eller behov av stöd från ramverket?**
+Jag känner att den är lite rörig, notation och även refactoring bör byggas ut.
+Kände mig ganska stressad då uppgiften blev grymt omfattande ?
+Kan exempelvis tänka mig ha en funktion för filtreringshanteringen och se över hur jag hanterar mina getPost.
+
+**Vilken är din TIL för detta kmom?**
+Jag behöver semester...
 
 
 

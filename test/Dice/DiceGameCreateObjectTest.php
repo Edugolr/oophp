@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 /**
  * Test cases for class DiceGame.
+ * @SuppressWarnings(PHPMD.ExcessivePublicCount)
  */
 class DiceGameCreateObjectTest extends TestCase
 {
